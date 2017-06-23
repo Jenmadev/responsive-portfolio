@@ -4,6 +4,7 @@ body {
 	color: gray;
 	font-family: arial;
 	background-image: url("../images/concrete.png");
+	padding-bottom: 100px;
 	
 	
 }
@@ -34,7 +35,7 @@ p{
 	
 }
 #menu li {
-	display: inline;
+	display: inline-block;
 	padding-left: 10px;
 	padding-right: 10px;
 	text-align: center;
@@ -53,7 +54,7 @@ p{
 #header {
 	background-color: #fff;
 	width: 100%;
-	margin-top: 20px;
+	margin-top: 0px;
 	padding-right: 20px;
 	height: 50px;
 	
@@ -74,9 +75,9 @@ p{
 	background-color: #fff;
 	width:20%;
 	float: left;
-	padding:10px;
 	margin-left: 20px;
 	margin-top: 20px;
+	padding: 10px;
 }
 #footer {
 	background-color: #666666;
@@ -86,6 +87,8 @@ p{
 	margin-top: 20px;
 	border-top: 5px solid #4aaaa5;
 	text-align: center;
+	position: fixed;
+	bottom: 0;
 }
 
 .clear {
@@ -182,3 +185,58 @@ input[type=submit] {
     text-align: center;
     padding-top: 10px;
 }
+@media only screen and (max-width: 980px){
+	
+	#pic {
+		float: none;
+	}
+}
+@media only screen and (max-width: 768px){
+	
+	#pic {
+		float: left;
+	}
+	#aside, #section {
+		float: none;
+		width: 90%;
+		padding: 10px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.container{
+		width: 100%;
+	}
+}
+@media only screen and (max-width: 640px){
+	
+	#pic {
+		float: none;
+	}
+	
+	#nav, #name {
+		width: 100%;
+		text-align: center;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	#nav{
+		background-color: white;
+	}
+	#menu {
+		width: 100%;
+	}
+	#menu li {
+		width: 30%;
+		padding-right: 0px;
+		padding-left: 0px;
+	}
+	#header {
+		margin-bottom: 60px;
+	}
+	#centered	{
+		text-align: center;
+		width: 100%;
+	}
+}
+
+
